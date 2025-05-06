@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Events</title>
+    <link rel="stylesheet" href="jsevents.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h2>Js Event Handling</h2>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#sign-up">Sign Up</a></li>
+            </ul>
+        <nav>
+    </header>
+
+    <div class="about" id="about">
+        <img class="slide active" src="https://images.unsplash.com/photo-1746202382547-ecc40a122aed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2M3x8fGVufDB8fHx8fA%3D%3D" alt="Slide 1">
+        <img class="slide" src="https://images.unsplash.com/photo-1746311499999-f23b2fea0fb7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 2">
+        <img class="slide" src="https://images.unsplash.com/photo-1745750747234-5df61f67a7bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5OHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 3">
+        <img class="slide" src="https://images.unsplash.com/photo-1745910020846-3d4d0088d24d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMjR8fHxlbnwwfHx8fHw%3D" alt="Slide 4">
+        <div class="about-text">
+            <h2>About Our Gallery</h2>
+            <p>This gallery showcases a collection of beautiful images. Explore and enjoy the view!</p>
+        </div>
+    </div>
+
+    <div class="gallery click-gallery" id="click-gallery">
+        <h3>Click to Reveal Gallery</h3>
+        <div>
+          <img src="https://images.unsplash.com/photo-1745605443047-ea774bf4a77f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNzR8fHxlbnwwfHx8fHw%3D" alt="Image 1">
+          <img src="https://images.unsplash.com/photo-1745827213263-ff9677c7830c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNDN8fHxlbnwwfHx8fHw%3D" alt="Image 2">
+          <img src="https://images.unsplash.com/photo-1745556061613-b6b41ae83ac7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzR8fHxlbnwwfHx8fHw%3D" alt="Image 3">
+          <img src="https://images.unsplash.com/photo-1745179178656-5d2795ec5d31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5N3x8fGVufDB8fHx8fA%3D%3D" alt="Image 4">
+        </div>
+        <button onclick="revealImages()">Reveal Images</button>
+    </div>
+
+    <div class="hover-gallery gallery">
+        <h3>Hover to Reveal Gallery</h3>
+        <div>
+          <img src="https://images.unsplash.com/photo-1744068631576-132a67696f5b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNDd8fHxlbnwwfHx8fHw%3D" alt="Image A">
+          <img src="https://images.unsplash.com/photo-1745794621090-d856c53b0cc2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMDR8fHxlbnwwfHx8fHw%3D" alt="Image B">
+          <img src="https://images.unsplash.com/photo-1745641280207-31b61005cb6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNzZ8fHxlbnwwfHx8fHw%3D" alt="Image C">
+          <img src="https://images.unsplash.com/photo-1745690665873-b5239161c17b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMTR8fHxlbnwwfHx8fHw%3D" alt="Image D">
+        </div>
+      </div>
+
+
+
+    <div class="form-section" id="sign-up">
+        <h3>Sign Up</h3>
+        <form onsubmit="return validateForm()">
+          <input type="text" id="name" placeholder="Name" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="password" id="password" placeholder="Password" required minlength="8">
+          <div class="error" id="form-error"></div>
+          <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script src="jsevents.js"></script>
+</body>
+</html>
